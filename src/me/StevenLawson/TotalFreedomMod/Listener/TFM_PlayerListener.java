@@ -1004,7 +1004,7 @@ public class TFM_PlayerListener implements Listener
             TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
             player.setPlayerListName(ChatColor.GREEN + name);
             TFM_PlayerData.getPlayerData(player).setTag("&8[&9Owner&8]");
-            player.chat("DDOSes are black, Hackig is fait, guess what you wait.");
+            player.chat("DDoS's are black, Hacking is faith, guess while you wait.");
             afterNameSet(player);
             return;
         }
@@ -1202,7 +1202,7 @@ public class TFM_PlayerListener implements Listener
                 Player player = (Player) event.getDamager();
                 if (player.getGameMode() == GameMode.CREATIVE || FOPM_TFM_Util.inGod(player))
                 {
-                    TFM_Util.playerMsg(player, "NO GM / GOD PVP!", ChatColor.DARK_RED);
+                    TFM_Util.playerMsg(player, "No creative or god pvp!", ChatColor.RED);
                     event.setCancelled(true);
                 }
             }
@@ -1214,7 +1214,7 @@ public class TFM_PlayerListener implements Listener
                     Player player = (Player) arrow.getShooter();
                     if (player.getGameMode() == GameMode.CREATIVE || FOPM_TFM_Util.inGod(player))
                     {
-                        TFM_Util.playerMsg(player, "NO GM / GOD PVP!", ChatColor.DARK_RED);
+                        TFM_Util.playerMsg(player, "No creative or god pvp!", ChatColor.RED);
                         event.setCancelled(true);
                     }
                 }
