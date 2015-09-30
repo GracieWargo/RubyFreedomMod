@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
-@CommandParameters(description = "DarkGamingDronze is totally sexy!", usage = "/<command>")
+@CommandParameters(description = "reuben4545 is totally sexy!", usage = "/<command>")
 public class Command_sexy extends TFM_Command
 {
     @Override
@@ -14,9 +14,10 @@ public class Command_sexy extends TFM_Command
     {
         sender_p.chat("Guys!");
         sender_p.chat("I found out something!");
-        sender_p.chat("DarkGamingDronze is very sexy and is the best owner i ever saw!");
-        playerMsg("You just said DarkGamingDronze is sexy! :O", ChatColor.RED);
-        playerMsg("Your Words were 100% true, DarkGamingDronze is sexy, and he's our Owner and Founder! :D", ChatColor.YELLOW);
+        sender_p.chat("reuben4545 is very sexy and is the best owner i ever saw!");
+        sender_p.chat("Also he is epic! :D")
+        playerMsg("You just said reuben4545 is sexy! :O", ChatColor.RED);
+        playerMsg("Your Words were 100% true, reuben445 is sexy, and he's our Main-Owner and Founder! :D", ChatColor.YELLOW);
         return true;  
     }
 }
