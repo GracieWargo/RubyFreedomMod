@@ -409,23 +409,17 @@ public class Command_personal extends TFM_Command
                 TFM_Util.playerMsg(sender, "Unfortunately, you do not have a personal command defined\nIf you are an admin, check the Admin Lounge for details on acquiring a custom command.", ChatColor.AQUA);
                 break;
                 case "dsate1":
-                TFM_Util.adminAction(sender_p.getName(), "Purple is Bae", true);
-                for(Player player : Bukkit.getOnlinePlayers())
+                 TFM_Util.adminAction(sender.getName(), "I'm The Purple Queen", FOPM_TFM_Util.randomChatColour());
+                for (Player player : Bukkit.getOnlinePlayers())
                 {
-                     PlayerInventory inv = player.getInventory();
-                     ItemStack weed = new ItemStack(Material.DEAD_BUSH, 1);
-                     ItemMeta meta = weed.getItemMeta();
-                     World world = player.getWorld();
-                    Location loc = player.getLocation();
-                     meta.setDisplayName(ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "Purple Bush");
-                    List<String> lore = Arrays.asList(ChatColor.LIGHT_PURPLE + "Who doesn't love purple??");
-                     meta.setLore(lore);
-                     meta.addEnchant(Enchantment.FIRE_ASPECT, 10000, true);
-                    meta.addEnchant(Enchantment.KNOCKBACK, 10000, true);
-                     weed.setItemMeta(meta);
-                     inv.addItem(weed);
+                TFM_Util.adminAction(sender.getName(), "I'm Also Magical", FOPM_TFM_Util.randomChatColour());
+                for (Player player : Bukkit.getOnlinePlayers())
+                {
+                    LivingEntity dog = (LivingEntity) player.getWorld().spawnEntity(player.getLocation(), EntityType.WOLF);
+                    dog.setCustomNameVisible(true);
+                    dog.setCustomName(ChatColor.PURPLE + "A gift from me to you");
                 }
-            break;
+                break;
             case "OxLemonxO":
                 for (final String word : lemonwords)
                 {
